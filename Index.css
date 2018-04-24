@@ -1,0 +1,40 @@
+﻿/*  基本  */
+body{ margin:0;  padding:0;  filter:blur(0.5px) }
+header{ position:fixed;  width:100%;  top:0;    }
+footer{ position:fixed;  width:100%;  bottom:0; }
+#contents_area{ margin:0 auto;  overflow:auto;/* スクロールする範囲を制御 */  padding:100px 0 100px;/* コンテンツ上下にスペース */  width:80%; }
+.formbox.text{ margin:20px auto;  border-style:none outset outset none;  width:90%;  padding:10px; }
+.formbox.text input[type="text"]{ border-style:inset none none inset;    width:90%;                }
+.formbox.button{ border-style:none outset outset none;  width:90%;  margin:20px auto;  padding:10px;       }
+.formbox.button label              { display:inline-block;/*ラジオボックスは表示しない*/  padding:10px 10px; }
+.formbox.button input[type="radio"]{ display: none;/* ラジオボタンも表示しない */                            } 
+/*  フォント  */
+body{ font: 200% "Terminal",monospace;  text-align:center; }
+.formbox.text input[type="text"]{ font:200% "Terminal",monospace; }
+/*  背景  */
+body{ background-image:url("./BackGround.png"); }
+header{ background-color:rgba(0,0,0,0.9);  color:#00c000; }
+footer{ background-color:rgba(0,0,0,0.9);  color:#fff;    }
+.formbox.text input[type="text"]{ background-color:rgba(255,255,255,0.75); }
+#wrapper_Number     { background:#ffa800 url("./FormBox.png");  background-blend-mode:multiply; }
+#wrapper_Name       { background:#ffff00 url("./FormBox.png");  background-blend-mode:multiply; }
+#wrapper_Affiliation{ background:#008000 url("./FormBox.png");  background-blend-mode:multiply; }
+#wrapper_SEX        { background:#00ffff url("./FormBox.png");  background-blend-mode:multiply; }
+#wrapper_SH         { background:#0000ff url("./FormBox.png");  background-blend-mode:multiply; }
+#wrapper_IO         { background:#800080 url("./FormBox.png");  background-blend-mode:multiply; }
+/*  配色  */
+.formbox.text input[type="text"]{ border-color:#888; }
+.formbox.button      { color:rgba(255,255,255,1);    }
+.formbox.button label{ color:#fff;                   }
+/* 文字の影 */
+#input_Number     { text-shadow:2px 2px 0 #ffa800; }
+#input_Name       { text-shadow:2px 2px 0 #ffff00; }
+#input_Affiliation{ text-shadow:2px 2px 0 #008000; }
+/* ボタンの色 */
+#wrapper_SEX label{ background-color:#00d0a8b0; }
+#wrapper_SH label { background-color:#0050d0b0; }
+#wrapper_IO label { background-color:#b000a0b0; }
+/* ボタンの文字の色 */
+#wrapper_SEX input[type="radio"]:checked + label{ background-color:#00d0a8;  color:#fff; }
+#wrapper_SH  input[type="radio"]:checked + label{ background-color:#0050d0;  color:#fff; }
+#wrapper_IO  input[type="radio"]:checked + label{ background-color:#b000a0;  color:#fff; }
