@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>キャリぷら入退室記録</title>
+        <meta http-equiv="content-type"        content="text/html" charset="utf-8">
+        <meta http-equiv="Content-Style-Type"  content="text/css">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta name="author"      content="Tomoya Yoshida">
+        <meta name="keywords"    content="キャリぷら　入退室　記録">
+        <meta name="description" content="入退室管理システム">
+        <meta name="robots"      content="noindex,nofollow">
+        
+        <link   type="text/css"        href="./css/Main.css" rel="stylesheet">
+        <link   type="text/css"        href="./css/FormBox_Butten.css" rel="stylesheet">
+        <link   type="text/css"        href="./css/FormBox_Text.css" rel="stylesheet">
+        <link   type="text/css"        href="./css/Config.css" rel="stylesheet">
+        <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="./js/Main.js"></script>
+        <script type="text/javascript" src="./js/CONTROLLER.js"></script>
+        <script type="text/javascript" src="./js/MODEL.js"></script>
+        <script type="text/javascript" src="./js/VIEW.js"></script>
+    </head>
+    <body>
+        <header><p>キャリぷら入退室記録</p></header>
+        <div id=contents_area>
+            <!-- 入力欄 -->
+            <div id=wrapper_Number      class="formbox text"> <input id=input_Number      maxlength="6"  name="Number"      type="text" autocomplete="off" placeholder="入館証No"              ></div>
+            <div id=wrapper_Name        class="formbox text"> <input id=input_Name        maxlength="30" name="Name"        type="text" autocomplete="off" placeholder="お名前"        disabled></div>
+            <div id=wrapper_Affiliation class="formbox text"> <input id=input_Affiliation maxlength="30" name="Affiliation" type="text" autocomplete="off" placeholder="学校（企業）名" disabled></div>
+            <!-- 入力欄 -->
+
+            <!-- ボタン -->
+            <div id=wrapper_SEX class="formbox button">性　別
+                <input id="bar1-1" value="M"     name="SEX" type="radio" disabled> <label for="bar1-1">男性</label>
+                <input id="bar1-2" value="F"     name="SEX" type="radio" disabled> <label for="bar1-2">女性</label>
+                <input id="bar1-3" value="Other" name="SEX" type="radio" disabled> <label for="bar1-3">その他</label></div>
+            <div id=wrapper_SH class="formbox button" >文　理
+                <input id="bar2-1" value="S"     name="SH"  type="radio" disabled> <label for="bar2-1">理系</label>
+                <input id="bar2-2" value="H"     name="SH"  type="radio" disabled> <label for="bar2-2">文系</label>
+                <input id="bar2-3" value="Other" name="SH"  type="radio" disabled> <label for="bar2-3">その他</label></div>
+            <div id=wrapper_IO class="formbox button" >入退室
+                <input id="bar3-1" value="In"    name="IO"  type="radio" disabled> <label for="bar3-1">入室</label>
+                <input id="bar3-2" value="Out"   name="IO"  type="radio" disabled> <label for="bar3-2">退室</label>
+                <input id="bar3-3" value="Other" name="IO"  type="radio" disabled> <label for="bar3-3">その他</label></div>
+            <!-- ボタン -->
+        </div>
+        <footer><p id=description>最初に『入館証No』を入力しましょう。</p></footer>
+    </body>
+</html>

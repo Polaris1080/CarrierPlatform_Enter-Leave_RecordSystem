@@ -1,0 +1,15 @@
+.formbox.button
+{
+    border-style: none outset outset none;
+    color       : rgba(255,255,255,1);
+    margin      : 20px auto;
+    padding     : 10px;
+    width       : 90%;
+}
+.formbox.button label
+{
+    color  :#fff;
+    display: inline-block; /*ラジオボックスは表示しない*/
+    padding: 10px 10px;
+}
+.formbox.button input[type="radio"] {display: none;} /* ラジオボタンも表示しない */
