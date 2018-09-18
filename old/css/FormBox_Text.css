@@ -1,0 +1,15 @@
+.formbox.text
+{
+    border-style: none outset outset none;
+    margin      : 20px auto;
+    padding     : 10px;
+    width       : 90%;
+}
+.formbox.text input[type="text"] /* 入力欄 */
+{
+    background-color: rgba(255,255,255,0.75);
+    border-style    : inset none none inset;
+    border-color    : #888;
+    font            : 200% "Terminal",monospace;
+    width           : 90%;
+}
